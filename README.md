@@ -47,41 +47,57 @@ Funcionalidades
 
 
 **Estructura del proyecto**
+
+## 📁 Estructura del proyecto
+
+```text
 Sudoku_Aleatorio_VERIFICADO/
+│
 ├── app.py
+│
 ├── algorithms/
 │   ├── backtracking.py
 │   ├── common.py
 │   └── dijkstra.py
+│
 ├── environment/
 │   ├── constraints.py
 │   └── sudoku.py
+│
 ├── instances/
 │   ├── catalog.py
 │   └── generator.py
+│
 ├── evaluation/
 │   ├── comparison.py
 │   └── metrics.py
+│
 ├── visualization/
 │   ├── events.py
 │   ├── playback.py
 │   └── tree.py
+│
 ├── interface/
 │   ├── callbacks.py
 │   └── layout.py
+│
 ├── data/
 │   ├── instances.json
 │   └── solutions.json
+│
 ├── notebooks/
 │   └── proyecto_sudoku.ipynb
+│
 ├── tests/
+│
 ├── reference/
+│
 ├── utils_busqueda.py
 ├── pruebas_experimentales.py
 ├── resultados_completos.csv
-├── resultados_resumen.csv
-├── requirements.txt
-└── README.md
+└── resultados_resumen.csv
+
+```
 
 **Requisitos previos**
 
