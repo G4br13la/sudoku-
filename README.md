@@ -95,8 +95,8 @@ Sudoku_Aleatorio_VERIFICADO/
 ├── utils_busqueda.py
 ├── pruebas_experimentales.py
 ├── resultados_completos.csv
-└── resultados_resumen.csv
-
+├── resultados_resumen.csv
+└── utils_busqueda.py
 ```
 
 **Requisitos previos**
