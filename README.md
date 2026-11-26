@@ -44,7 +44,7 @@ Funcionalidades
 |Pandas	| Tablas de resultados y métricas |
 |Plotly |	Gráficas de comparación |
 ||Pytest |	Pruebas automatizadas |
-| --------- | ------------- |
+| ---------------------- |
 
 **Estructura del proyecto**
 
