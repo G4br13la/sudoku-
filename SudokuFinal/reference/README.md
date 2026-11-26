@@ -1,1 +1,0 @@
-Este directorio conserva copias del material de clase proporcionado como referencia: notebook de espacios de estados, ambientes, utilidades de experimentación, cola prioritaria/nodos originales y requirements de clase. La aplicación no importa estos módulos de referencia; utiliza `utils_busqueda.py` en la raíz del proyecto, adaptado para búsqueda de costo mínimo.
