@@ -183,10 +183,4 @@ Este proceso permite verificar las restricciones de los entornos, la validez de 
 
 ## Notebook
 
-El proyecto incluye un notebook de Jupyter para la demostración del entorno, la creación de instancias, la descripción de sus métodos y atributos, y la ejecución de ejemplos de los algoritmos implementados. Puede utilizarse desde Jupyter Notebook o Google Colab.
-
-## Contexto académico
-
-Proyecto desarrollado para la asignatura **Representación y Solución Automática de Problemas**, orientado a la aplicación de conceptos de inteligencia artificial, representación de estados, restricciones y algoritmos de búsqueda.
-
-El proyecto busca no solo obtener soluciones válidas, sino también analizar y comparar el comportamiento de las estrategias implementadas frente a diferentes instancias del problema.
+El proyecto incluye un notebook de Jupyter para la demostración del entorno, la creación de instancias, la descripción de sus métodos y atributos, y la ejecución de ejemplos de los algoritmos implementados. Puede utilizarse desde Jupyter Notebook o Google Colab
