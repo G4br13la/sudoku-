@@ -1,186 +1,150 @@
-# sudoku-
-es un proyecto de representacion y solucion automatica de problemas donde utilizamos diferentes métodos para solucionar el juego en diferentes dificultades
+Sudoku Search Lab
 
-# Sudoku Search Lab
-### Agente para la resolución automática de Sudoku mediante algoritmos de búsqueda
+Agente para la resolución automática de Sudoku mediante algoritmos de búsqueda
 
-## Descripción
+**Descripción**
+Sudoku Search Lab es una aplicación interactiva desarrollada en Python que representa el Sudoku como un problema de búsqueda en espacios de estados y permite resolver Sudoku clásico y Sudoku diagonal mediante Backtracking y Dijkstra (búsqueda de costo uniforme). La interfaz está construida con Gradio e incluye generación de tableros, validación, animación del proceso de búsqueda, árbol de expansión y comparación de métricas.
+**Objetivos**
+- Representar Sudoku como un espacio de estados con restricciones.
+- Resolver tableros mediante Backtracking y Dijkstra.
+- Trabajar con Sudoku clásico y diagonal.
+- Generar tableros con niveles Fácil, Medio y Difícil.
+- Visualizar el proceso de búsqueda y comparar métricas.
+**Entornos**
+- Sudoku clásico: cada fila, columna y bloque 3×3 debe contener los dígitos 1–9 sin repetición.
+- Sudoku diagonal: incorpora las reglas clásicas y exige que las dos diagonales principales también contengan los dígitos 1–9 sin repetición.
+**Algoritmos**
+**- Backtracking:** búsqueda recursiva en profundidad; asigna valores y retrocede cuando una decisión lleva a un estado inválido.
+**- Dijkstra:** búsqueda de costo uniforme mediante frontera prioritaria. Cada asignación tiene costo unitario, por lo que se explora por niveles de costo (equivalente a BFS cuando los costos son uniformes).
+Funcionalidades
+- Selección de Sudoku clásico o diagonal.
+- Dificultad Fácil, Medio o Difícil.
+- Generación de tableros y edición de valores (usar 0 para casillas vacías).
+- Validación de tablero.
+- Resolución y registro de búsqueda con Backtracking o Dijkstra.
+- Reproducción paso a paso: iniciar, pausar, reanudar, avanzar, retroceder y reiniciar.
+- Visualización del tablero y árbol de expansión.
+- Comparación de algoritmos mediante tabla y gráfica.
+- Métricas: tiempo, nodos generados/expandidos/visitados, frontera o profundidad máxima, costo y memoria aproximada.
+**Tecnologías**
+|Librería	| Uso |
+| -------- | -------- |
+|Python |	Lenguaje principal |
+||Gradio |	Interfaz web interactiva |
+|Pandas	| Tablas de resultados y métricas |
+|Plotly |	Gráficas de comparación |
+||Pytest |	Pruebas automatizadas |
+| --------- | ------------- |
 
-Sudoku Search Lab es un proyecto desarrollado en Python que implementa un agente capaz de resolver instancias de Sudoku clásico y Sudoku diagonal mediante algoritmos de búsqueda. La aplicación integra la generación de tableros, validación de restricciones, ejecución y visualización de los procesos de búsqueda, así como la evaluación comparativa de los algoritmos implementados.
-
-El proyecto aborda el Sudoku como un problema de búsqueda en espacios de estados, permitiendo analizar cómo las diferentes estrategias de exploración se comportan frente a distintas configuraciones del problema y niveles de dificultad.
-
-## Objetivos
-
-- Representar el Sudoku como un problema de búsqueda en espacios de estados.
-- Implementar algoritmos de búsqueda para encontrar soluciones válidas.
-- Incorporar restricciones propias de las variantes clásica y diagonal.
-- Generar instancias de Sudoku con diferentes niveles de dificultad.
-- Visualizar el proceso de exploración realizado por los algoritmos.
-- Evaluar y comparar el desempeño de las estrategias implementadas.
-
-## Entornos
-
-### Sudoku clásico
-
-Tablero de 9 × 9 en el que cada fila, columna y subcuadrícula de 3 × 3 debe contener los dígitos del 1 al 9 sin repetición.
-
-### Sudoku diagonal
-
-Variante que incorpora las restricciones del Sudoku clásico, junto con la condición de que las dos diagonales principales también contengan los dígitos del 1 al 9 sin repetición.
-
-## Algoritmos de búsqueda
-
-### Backtracking
-
-Implementación de una estrategia de búsqueda en profundidad que asigna valores a las casillas vacías, verifica las restricciones del entorno y retrocede cuando una asignación conduce a un estado inconsistente.
-
-### Dijkstra
-
-Implementación de búsqueda de costo uniforme mediante una estructura de prioridad, adaptada a la exploración de estados del Sudoku. Cada transición representa una asignación válida y tiene un costo unitario.
-
-Dado que las transiciones poseen costos uniformes, el comportamiento de búsqueda corresponde a una exploración por niveles del espacio de estados, equivalente a BFS bajo estas condiciones.
-
-## Funcionalidades
-
-- Selección entre Sudoku clásico y Sudoku diagonal.
-- Configuración de niveles de dificultad: fácil, medio y difícil.
-- Generación de instancias aleatorias.
-- Validación de tableros y restricciones.
-- Resolución mediante Backtracking y Dijkstra.
-- Visualización del proceso de búsqueda.
-- Ejecución paso a paso y reproducción de la búsqueda.
-- Comparación del desempeño de los algoritmos.
-- Registro y análisis de métricas de evaluación.
-
-## Evaluación
-
-El desempeño de los algoritmos se analiza mediante indicadores que permiten estudiar su comportamiento durante el proceso de búsqueda, incluyendo:
-
-- Tiempo de ejecución.
-- Nodos explorados.
-- Estados generados.
-- Costo de búsqueda.
-
-Las comparaciones se realizan sobre una misma instancia, con el propósito de mantener condiciones equivalentes de evaluación.
-
-## Tecnologías
-
-| Tecnología | Uso |
-|---|---|
-| Python | Implementación del proyecto y algoritmos |
-| Gradio | Desarrollo de la interfaz interactiva |
-| NumPy | Manejo de estructuras de datos numéricas |
-| Plotly | Visualización de resultados y métricas |
-| Pytest | Pruebas y validación del sistema |
-| Jupyter Notebook | Experimentación y documentación del entorno |
-
-## Estructura del proyecto
-
-```text
-Sudoku_Search_Lab/
-│
+**Estructura del proyecto**
+Sudoku_Aleatorio_VERIFICADO/
 ├── app.py
 ├── algorithms/
+│   ├── backtracking.py
+│   ├── common.py
+│   └── dijkstra.py
 ├── environment/
+│   ├── constraints.py
+│   └── sudoku.py
 ├── instances/
+│   ├── catalog.py
+│   └── generator.py
 ├── evaluation/
+│   ├── comparison.py
+│   └── metrics.py
 ├── visualization/
+│   ├── events.py
+│   ├── playback.py
+│   └── tree.py
 ├── interface/
+│   ├── callbacks.py
+│   └── layout.py
 ├── data/
+│   ├── instances.json
+│   └── solutions.json
 ├── notebooks/
+│   └── proyecto_sudoku.ipynb
 ├── tests/
 ├── reference/
 ├── utils_busqueda.py
-├├── requirements.txt
-├── README.md
-└── .gitignore
-```
+├── pruebas_experimentales.py
+├── resultados_completos.csv
+├── resultados_resumen.csv
+├── requirements.txt
+└── README.md
 
-### Descripción de los módulos
-
-| Módulo | Responsabilidad |
-|---|---|
-| `app.py` | Punto de entrada de la aplicación. |
-| `algorithms/` | Implementación de los algoritmos de búsqueda. |
-| `environment/` | Representación del Sudoku, estados y restricciones. |
-| `instances/` | Generación y gestión de instancias. |
-| `evaluation/` | Cálculo de métricas y comparación de resultados. |
-| `visualization/` | Registro y visualización de los procesos de búsqueda. |
-| `interface/` | Componentes de interfaz y conexión con la lógica. |
-| `data/` | Almacenamiento de instancias y soluciones. |
-| `notebooks/` | Notebook de experimentación y documentación. |
-| `tests/` | Pruebas de funcionamiento y validación. |
-| `reference/` | Material de referencia del proyecto. |
-| `utils_busqueda.py` | Estructuras y utilidades auxiliares de búsqueda. |
-
-## Instalación y ejecución
-
-### 1. Clonar el repositorio
-
-```bash
-git clone https://github.com/TU-USUARIO/sudoku-search-lab.git
-```
-
-### 2. Acceder al directorio
-
-```bash
-cd sudoku-search-lab
-```
-
-### 3. Crear un entorno virtual
-
-**macOS / Linux**
-
-```bash
+**Requisitos previos**
+- Python 3.11 o 3.12 recomendado (el proyecto también está preparado para Python 3.13).
+- Git (opcional, si se clona el repositorio).
+- Navegador web moderno.
+- 
+**Instalación**
+  
+**1. Descargar o clonar el proyecto**
+Si se usa Git:
+git clone <URL_DEL_REPOSITORIO>
+cd <CARPETA_DEL_REPOSITORIO>
+Si se descargó como ZIP, descomprímalo y abra una terminal dentro de la carpeta que contiene app.py.
+**2. Crear un entorno virtual**
+macOS / Linux
 python3 -m venv .venv
-```
-
-**Windows**
-
-```bash
+Windows
 py -m venv .venv
-```
-
-### 4. Activar el entorno virtual
-
-**macOS / Linux**
-
-```bash
+**3. Activar el entorno virtual**
+macOS / Linux
 source .venv/bin/activate
-```
-
-**Windows PowerShell**
-
-```powershell
+Windows PowerShell
 .\.venv\Scripts\Activate.ps1
-```
-
-### 5. Instalar las dependencias
-
-```bash
+Si PowerShell bloquea la activación, ejecute en esa misma terminal:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\.venv\Scripts\Activate.ps1
+**4. Instalar librerías**
+Desde la raíz del proyecto:
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-```
-
-### 6. Ejecutar la aplicación
-
-```bash
+Ejecución
+Con el entorno virtual activado y ubicado en la carpeta raíz:
 python app.py
-```
+Gradio mostrará una dirección local. Abra en el navegador:
+http://127.0.0.1:7860
 
-Una vez iniciada la aplicación, Gradio proporcionará una dirección local para acceder a la interfaz desde el navegador.
-
-## Pruebas
-
-Las pruebas del proyecto pueden ejecutarse mediante:
-
-```bash
+Toca mantener abierta la terminal mientras se utiliza la aplicación y para detenerla, toca presionar Ctrl + C.
+Uso de la aplicación
+1. Seleccionar el entorno: Sudoku clásico o Sudoku diagonal.
+2. Elijir la dificultad (Fácil, Medio o Difícil) o genere otro tablero.
+3. Editar las casillas; 0 representa una casilla vacía.
+4. Presionar "Validar tablero" para comprobar las restricciones.
+5. Seleccione Backtracking o Dijkstra.
+6. Presione Resolver y registrar búsqueda para ejecutar y registrar la exploración.
+7. Use los controles de reproducción para recorrer los eventos de búsqueda.
+8. Presione Comparar ambos algoritmos para actualizar la tabla y gráfica de métricas.
+   
+**Pruebas automatizadas**
+Desde la raíz del proyecto, con el entorno virtual activo:
 pytest -q
-```
+La suite verifica las restricciones, generación de instancias, algoritmos, comparación y visualización.
+Capturas de pantalla
+Las capturas se guardan dentro de screenshots/ y se insertan en el README con Markdown. Cree esa carpeta en la raíz del proyecto y use estos nombres:
+1. Pantalla principal
+Captura la interfaz completa recién abierta, mostrando la selección del tipo de Sudoku y la dificultad.
+Guarde como screenshots/01_inicio.png.
 
-Este proceso permite verificar las restricciones de los entornos, la validez de las soluciones, el funcionamiento de los algoritmos y los componentes principales del sistema.
+2. Tablero generado
+Captura un tablero con una dificultad seleccionada, que se vea el Sudoku y los controles de generación/validación.
+Guarde como screenshots/02_tablero.png.
 
-## Notebook
+3. Validación del tablero
+Capture el resultado de pulsar Validar tablero, mostrando el mensaje de tablero válido (o la validación que se quiera documentar).
+Guarde como screenshots/03_validacion.png.
 
-El proyecto incluye un notebook de Jupyter para la demostración del entorno, la creación de instancias, la descripción de sus métodos y atributos, y la ejecución de ejemplos de los algoritmos implementados. Puede utilizarse desde Jupyter Notebook o Google Colab
+4. Ejecución de un algoritmo
+Capture la interfaz luego de ejecutar Backtracking o Dijkstra, mostrando el tablero y el estado o resultado de la búsqueda.
+Guarde como screenshots/04_busqueda.png.
+
+5. Visualización del árbol
+Capture el árbol de expansión, incluyendo nodos/ramas y el estado del evento actual.
+Guarde como screenshots/05_arbol.png.
+
+6. Comparación de algoritmos
+Capture la tabla y la gráfica de comparación, con métricas visibles.
+Guarde como screenshots/06_comparacion.png.
