@@ -48,7 +48,7 @@ Funcionalidades
 
 **Estructura del proyecto**
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```text
 Sudoku_Aleatorio_VERIFICADO/
