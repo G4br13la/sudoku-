@@ -43,7 +43,7 @@ Funcionalidades
 ||Gradio |	Interfaz web interactiva |
 |Pandas	| Tablas de resultados y métricas |
 |Plotly |	Gráficas de comparación |
-||Pytest |	Pruebas automatizadas |
+|Pytest |	Pruebas automatizadas |
 
 
 **Estructura del proyecto**
