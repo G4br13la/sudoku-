@@ -107,21 +107,14 @@ Sudoku_Aleatorio_VERIFICADO/
   
 **Instalación**
   
-**1. Descargar o clonar el proyecto:**
-
-Si se usa Git:
-git clone <URL_DEL_REPOSITORIO>
-cd <CARPETA_DEL_REPOSITORIO>
-Si se descargó como ZIP, descomprímalo y abra una terminal dentro de la carpeta que contiene app.py.
-
-**2. Crear un entorno virtual:**
+**1. Crear un entorno virtual:**
 
 macOS / Linux
 python3 -m venv .venv
 Windows
 py -m venv .venv
 
-**3. Activar el entorno virtual:**
+**2. Activar el entorno virtual:**
 
 macOS / Linux
 source .venv/bin/activate
@@ -131,7 +124,7 @@ Si PowerShell bloquea la activación, ejecute en esa misma terminal:
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\.venv\Scripts\Activate.ps1
 
-**4. Instalar librerías:**
+**3. Instalar librerías:**
 
 Desde la raíz del proyecto:
 python -m pip install --upgrade pip
