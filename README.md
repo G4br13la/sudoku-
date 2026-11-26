@@ -40,7 +40,7 @@ Funcionalidades
 |Librería	| Uso |
 | -------- | -------- |
 |Python |	Lenguaje principal |
-||Gradio |	Interfaz web interactiva |
+|Gradio |	Interfaz web interactiva |
 |Pandas	| Tablas de resultados y métricas |
 |Plotly |	Gráficas de comparación |
 |Pytest |	Pruebas automatizadas |
