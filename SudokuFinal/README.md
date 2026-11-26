@@ -4,9 +4,9 @@ Aplicación interactiva para resolver y comparar Sudoku clásico y Sudoku diagon
 
 ## 1. Funcionalidades
 
-- Dos variantes integradas: Sudoku clásico y Sudoku diagonal.
-- Tres niveles de instancia: Fácil (48 pistas), Medio (40 pistas) y Difícil (34 pistas). Son niveles internos de este proyecto, no una clasificación oficial universal; la dificultad también depende de la distribución de pistas y del esfuerzo medido.
-- Catálogo reproducible para pruebas. La interfaz genera instancias nuevas al abrir una variante, cambiar el nivel o pulsar «Generar otro tablero». El generador crea una solución completa aleatoria desde cero, elimina pistas comprobando unicidad y permite una semilla explícita para reproducir experimentos.
+**- Dos variantes integradas:** Sudoku clásico y Sudoku diagonal.
+**- Tres niveles de instancia:** Fácil (48 pistas), Medio (40 pistas) y Difícil (34 pistas). Son niveles internos de este proyecto, no una clasificación oficial universal; la dificultad también depende de la distribución de pistas y del esfuerzo medido.
+**- Catálogo reproducible para pruebas:** La interfaz genera instancias nuevas al abrir una variante, cambiar el nivel o pulsar «Generar otro tablero». El generador crea una solución completa aleatoria desde cero, elimina pistas comprobando unicidad y permite una semilla explícita para reproducir experimentos.
 - Validación de números, filas, columnas, bloques y diagonales.
 - Comprobación de unicidad en el generador mediante búsqueda propia.
 - Backtracking recursivo con registro de pruebas, callejones sin salida y retrocesos.
