@@ -1,0 +1,1 @@
+`instances.json` contiene un tablero reproducible por variante y nivel (semillas 2026, 2027 y 2028 respectivamente). `solutions.json` conserva un ejemplo de solución completa por variante (semilla 2026); ya no se utiliza como base del generador. La interfaz genera nuevas soluciones completas aleatorias y verifica la unicidad al eliminar pistas.
