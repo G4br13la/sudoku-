@@ -169,17 +169,17 @@ Guarde como screenshots/02_tablero.png.
 Capture el resultado de pulsar Validar tablero, mostrando el mensaje de tablero válido (o la validación que se quiera documentar).
 Guarde como screenshots/03_validacion.png.
 
-**6. Ejecución de un algoritmo:**
+**4. Ejecución de un algoritmo:**
 
 Capture la interfaz luego de ejecutar Backtracking o Dijkstra, mostrando el tablero y el estado o resultado de la búsqueda.
 Guarde como screenshots/04_busqueda.png.
 
-**6. Visualización del árbol:**
+**5. Visualización del árbol:**
 
 Capture el árbol de expansión, incluyendo nodos/ramas y el estado del evento actual.
 Guarde como screenshots/05_arbol.png.
 
-**7. Comparación de algoritmos:**
+**6. Comparación de algoritmos:**
 
 Capture la tabla y la gráfica de comparación, con métricas visibles.
 Guarde como screenshots/06_comparacion.png.
