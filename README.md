@@ -1,4 +1,4 @@
-Sudoku Search Lab
+**Sudoku Search Lab**
 
 Agente para la resolución automática de Sudoku mediante algoritmos de búsqueda
 
