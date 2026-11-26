@@ -47,7 +47,6 @@ Funcionalidades
 
 
 **Estructura del proyecto**
-
 Sudoku_Aleatorio_VERIFICADO/
 ├── app.py
 ├── algorithms/
